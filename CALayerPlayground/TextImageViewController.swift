@@ -38,7 +38,7 @@ class TextImageViewController: UIViewController {
         
         let view = self.view.snapshotView(afterScreenUpdates: true)
         
-        let newImageBounds = CGSize.init(width: (entryImageView.bounds.size.width + contentView.bounds.size.width), height: (entryImageView.bounds.size.height + contentView.bounds.size.height))
+        let newImageBounds = CGSize.init(width: (entryImageView.bounds.size.width), height: (entryImageView.bounds.size.height + contentView.bounds.size.height))
         
         // Begin context
         UIGraphicsBeginImageContextWithOptions(newImageBounds, true, 0)
@@ -54,12 +54,12 @@ class TextImageViewController: UIViewController {
         
         //contentView.drawHierarchy(in: CGRect(x: contentView.frame.size.width / 2, y: entryImageView.frame.size.height, width: contentView.frame.size.width, height: contentView.frame.size.height), afterScreenUpdates: true)
         
-        contentView.drawHierarchy(in: CGRect(x: contentView.frame.size.width / 2, y: entryImageView.frame.size.height, width: contentView.frame.size.width, height: contentView.frame.size.height), afterScreenUpdates: true)
+        contentView.drawHierarchy(in: CGRect(x: 0, y: entryImageView.frame.size.height, width: contentView.frame.size.width, height: contentView.frame.size.height), afterScreenUpdates: true)
         
         //        entryImageView.drawHierarchy(in: CGRect(x: entryImageView.frame.size.width / 2, y: 0, width: entryImageView.frame.width, height: entryImageView.frame.height), afterScreenUpdates: true)
         
         //     for width not using entryImageView.frame.width since we want content and image to be same width
-        entryImageView.drawHierarchy(in: CGRect(x: entryImageView.frame.size.width / 2, y: 0, width: contentView.frame.width, height: entryImageView.frame.height), afterScreenUpdates: true)
+        entryImageView.drawHierarchy(in: CGRect(x: 0, y: 0, width: contentView.frame.width, height: entryImageView.frame.height), afterScreenUpdates: true)
         
         
         

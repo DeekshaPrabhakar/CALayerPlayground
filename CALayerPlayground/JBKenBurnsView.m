@@ -174,7 +174,7 @@ enum JBSourceMode {
     float rotation = (arc4random() % 9) / 100;
     int moveType = arc4random() % 4;
     printf("%d", moveType);
-    moveType = 2;
+    //moveType = 1;
     switch (moveType) {
         case 0:
             originX = 0;

@@ -19,10 +19,17 @@ class KenBurnsEffectViewController: UIViewController {
 
         if let sImage = snapShotImage as UIImage!{
                     
-            //let imagesArray = [UIImage.init(named: "asianArtMuseum")]
-            let imagesArray = [sImage]
+            var imagesArray = [UIImage.init(named: "asianArtMuseum")]
+            //let imagesArray = [sImage]
+            //var imageArray = [UIImage]()
+            imagesArray.append(UIImage(named: "1")!)
+            imagesArray.append(UIImage(named: "2")!)
+            imagesArray.append(UIImage(named: "3")!)
+            imagesArray.append(UIImage(named: "4")!)
+
             
-            kensView.animate(withImages: imagesArray, transitionDuration: 6, initialDelay: 0, loop: false, isLandscape: false)
+            kensView.animate(withImages: imagesArray, transitionDuration: 3, initialDelay: 0, loop: false, isLandscape: true)
+//            kensView.animateWithImages(imagesArray as! [UIImage], imageAnimationDuration: 3, initialDelay: 0, shouldLoop: false)
         }
 
     }

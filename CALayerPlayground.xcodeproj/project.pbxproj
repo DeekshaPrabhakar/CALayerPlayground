@@ -18,6 +18,7 @@
 		CB83F70A1DEFB1600038CF56 /* KenBurnsEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F7091DEFB1600038CF56 /* KenBurnsEffectViewController.swift */; };
 		CB83F70C1DF10F2E0038CF56 /* SnapshotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB83F70B1DF10F2E0038CF56 /* SnapshotView.xib */; };
 		CB83F70E1DF10FD80038CF56 /* SnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F70D1DF10FD80038CF56 /* SnapshotView.swift */; };
+		CB83F7101DF2783B0038CF56 /* JBKenBurnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F70F1DF2783B0038CF56 /* JBKenBurnsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CB83F7091DEFB1600038CF56 /* KenBurnsEffectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenBurnsEffectViewController.swift; sourceTree = "<group>"; };
 		CB83F70B1DF10F2E0038CF56 /* SnapshotView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SnapshotView.xib; sourceTree = "<group>"; };
 		CB83F70D1DF10FD80038CF56 /* SnapshotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotView.swift; sourceTree = "<group>"; };
+		CB83F70F1DF2783B0038CF56 /* JBKenBurnsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBKenBurnsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		CB83F6EE1DEE428B0038CF56 /* CALayerPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				CB83F70F1DF2783B0038CF56 /* JBKenBurnsView.swift */,
 				CB83F7061DEE7B3A0038CF56 /* JBKenBurnsView.h */,
 				CB83F7071DEE7B3A0038CF56 /* JBKenBurnsView.m */,
 				CB83F6EF1DEE428B0038CF56 /* AppDelegate.swift */,
@@ -167,6 +170,7 @@
 				CB83F7041DEE72990038CF56 /* SnapshotViewController.swift in Sources */,
 				CB83F7021DEE684D0038CF56 /* TextImageViewController.swift in Sources */,
 				CB83F7081DEE7B3A0038CF56 /* JBKenBurnsView.m in Sources */,
+				CB83F7101DF2783B0038CF56 /* JBKenBurnsView.swift in Sources */,
 				CB83F70A1DEFB1600038CF56 /* KenBurnsEffectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
