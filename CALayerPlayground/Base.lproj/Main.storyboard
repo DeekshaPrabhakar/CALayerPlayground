@@ -1,26 +1,214 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Ms-Up-rom">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CALayerPlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zy-Aa-wHL">
+                                <rect key="frame" x="10" y="134" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="d7X-qC-TeJ"/>
+                                    <constraint firstAttribute="height" constant="300" id="kyA-qo-Zo5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0zy-Aa-wHL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ae6-4c-P6u"/>
+                            <constraint firstItem="0zy-Aa-wHL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f2V-Jz-ZcI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="viewForLayer" destination="0zy-Aa-wHL" id="Whp-Pn-5Rn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Text Image View Controller-->
+        <scene sceneID="7DC-IY-0DN">
+            <objects>
+                <viewController id="iNx-5l-tOa" customClass="TextImageViewController" customModule="CALayerPlayground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Yo-zc-aXb"/>
+                        <viewControllerLayoutGuide type="bottom" id="yqE-xc-OnW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aby-Of-r6k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5W-Jf-dMm" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="502" width="320" height="66"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deeksha" translatesAutoresizingMaskIntoConstraints="NO" id="zEy-MO-dGe">
+                                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="61I-mE-KLi"/>
+                                            <constraint firstAttribute="height" constant="50" id="Rco-DK-tsk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29th Nov @ Asian Art Museum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgD-R6-1gH">
+                                        <rect key="frame" x="66" y="31" width="198" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deeksha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mV-0r-o9e">
+                                        <rect key="frame" x="66" y="8" width="67" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.89411764709999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8mV-0r-o9e" secondAttribute="trailing" constant="8" id="0iq-FL-iWX"/>
+                                    <constraint firstAttribute="height" constant="66" id="1gT-GJ-CP9"/>
+                                    <constraint firstItem="zEy-MO-dGe" firstAttribute="top" secondItem="U5W-Jf-dMm" secondAttribute="top" constant="8" id="DJz-bd-TBg"/>
+                                    <constraint firstItem="8mV-0r-o9e" firstAttribute="leading" secondItem="zEy-MO-dGe" secondAttribute="trailing" constant="8" id="ODA-o3-he0"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bgD-R6-1gH" secondAttribute="trailing" constant="8" id="UIP-a8-2vd"/>
+                                    <constraint firstAttribute="bottom" secondItem="zEy-MO-dGe" secondAttribute="bottom" constant="8" id="eeH-am-9VL"/>
+                                    <constraint firstItem="8mV-0r-o9e" firstAttribute="top" secondItem="zEy-MO-dGe" secondAttribute="top" id="j2D-2F-tVd"/>
+                                    <constraint firstItem="zEy-MO-dGe" firstAttribute="leading" secondItem="U5W-Jf-dMm" secondAttribute="leading" constant="8" id="nU6-67-Jdc"/>
+                                    <constraint firstItem="bgD-R6-1gH" firstAttribute="top" secondItem="8mV-0r-o9e" secondAttribute="bottom" constant="2" id="vZ9-Sp-fXh"/>
+                                    <constraint firstItem="bgD-R6-1gH" firstAttribute="leading" secondItem="8mV-0r-o9e" secondAttribute="leading" id="vjG-Fx-Q8Q"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="asianArtMuseum" translatesAutoresizingMaskIntoConstraints="NO" id="sKh-KS-NO0">
+                                <rect key="frame" x="10" y="302" width="300" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.74509803919999995" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yqE-xc-OnW" firstAttribute="top" secondItem="U5W-Jf-dMm" secondAttribute="bottom" id="14Q-7E-Src"/>
+                            <constraint firstItem="U5W-Jf-dMm" firstAttribute="leading" secondItem="aby-Of-r6k" secondAttribute="leading" id="2nL-bU-KZf"/>
+                            <constraint firstAttribute="trailing" secondItem="U5W-Jf-dMm" secondAttribute="trailing" id="xcQ-4h-f5Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hQm-G2-lvA">
+                        <barButtonItem key="leftBarButtonItem" title="Ken Burns Effect" id="BEc-OD-tlZ">
+                            <connections>
+                                <segue destination="SPs-Nz-NKs" kind="show" id="j6S-db-ZZc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Snapshot" id="iad-Ge-Zrb">
+                            <connections>
+                                <segue destination="kqW-Kb-YJ0" kind="show" id="cjK-ow-gVQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentView" destination="U5W-Jf-dMm" id="wsq-ZH-4zF"/>
+                        <outlet property="entryImageView" destination="sKh-KS-NO0" id="aw3-3e-XG0"/>
+                        <outlet property="profileImageView" destination="zEy-MO-dGe" id="PzO-4L-SvX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6f-lc-SQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.125" y="688.73239436619724"/>
+        </scene>
+        <!--Ken Burns Effect View Controller-->
+        <scene sceneID="f3O-XM-7hO">
+            <objects>
+                <viewController id="SPs-Nz-NKs" customClass="KenBurnsEffectViewController" customModule="CALayerPlayground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EkL-vY-2SJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="v6m-sQ-52s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4bN-Jf-qbt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AL5-ZC-VGD" customClass="JBKenBurnsView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="kensView" destination="AL5-ZC-VGD" id="Qht-Fw-kdz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmV-Jo-fIt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897.5" y="-64.436619718309856"/>
+        </scene>
+        <!--Snapshot View Controller-->
+        <scene sceneID="BKD-H7-dXO">
+            <objects>
+                <viewController id="kqW-Kb-YJ0" customClass="SnapshotViewController" customModule="CALayerPlayground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="58g-3F-cji"/>
+                        <viewControllerLayoutGuide type="bottom" id="NZY-av-5om"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aGh-uO-A2H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Created SnapShot or Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfW-aB-WOm">
+                                <rect key="frame" x="54" y="93" width="212" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRn-7X-Kli">
+                                <rect key="frame" x="10" y="152" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="snapShotImageView" destination="TRn-7X-Kli" id="v5s-It-Fhc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqz-to-DNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897.5" y="708.80281690140851"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iTR-e7-Jc8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Ms-Up-rom" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lZp-dU-4ga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iNx-5l-tOa" kind="relationship" relationship="rootViewController" id="WAH-WK-qKa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="geB-zh-pub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="688.73239436619724"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="asianArtMuseum" width="1600" height="1068"/>
+        <image name="deeksha" width="460" height="460"/>
+    </resources>
 </document>

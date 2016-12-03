@@ -12,6 +12,12 @@
 		CB83F6F51DEE428B0038CF56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB83F6F31DEE428B0038CF56 /* Main.storyboard */; };
 		CB83F6F71DEE428B0038CF56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB83F6F61DEE428B0038CF56 /* Assets.xcassets */; };
 		CB83F6FA1DEE428B0038CF56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB83F6F81DEE428B0038CF56 /* LaunchScreen.storyboard */; };
+		CB83F7021DEE684D0038CF56 /* TextImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F7011DEE684D0038CF56 /* TextImageViewController.swift */; };
+		CB83F7041DEE72990038CF56 /* SnapshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F7031DEE72990038CF56 /* SnapshotViewController.swift */; };
+		CB83F7081DEE7B3A0038CF56 /* JBKenBurnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB83F7071DEE7B3A0038CF56 /* JBKenBurnsView.m */; };
+		CB83F70A1DEFB1600038CF56 /* KenBurnsEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F7091DEFB1600038CF56 /* KenBurnsEffectViewController.swift */; };
+		CB83F70C1DF10F2E0038CF56 /* SnapshotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB83F70B1DF10F2E0038CF56 /* SnapshotView.xib */; };
+		CB83F70E1DF10FD80038CF56 /* SnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F70D1DF10FD80038CF56 /* SnapshotView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		CB83F6F61DEE428B0038CF56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB83F6F91DEE428B0038CF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB83F6FB1DEE428B0038CF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB83F7011DEE684D0038CF56 /* TextImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextImageViewController.swift; sourceTree = "<group>"; };
+		CB83F7031DEE72990038CF56 /* SnapshotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotViewController.swift; sourceTree = "<group>"; };
+		CB83F7051DEE7B3A0038CF56 /* CALayerPlayground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayerPlayground-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB83F7061DEE7B3A0038CF56 /* JBKenBurnsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBKenBurnsView.h; sourceTree = "<group>"; };
+		CB83F7071DEE7B3A0038CF56 /* JBKenBurnsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBKenBurnsView.m; sourceTree = "<group>"; };
+		CB83F7091DEFB1600038CF56 /* KenBurnsEffectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenBurnsEffectViewController.swift; sourceTree = "<group>"; };
+		CB83F70B1DF10F2E0038CF56 /* SnapshotView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SnapshotView.xib; sourceTree = "<group>"; };
+		CB83F70D1DF10FD80038CF56 /* SnapshotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +68,20 @@
 		CB83F6EE1DEE428B0038CF56 /* CALayerPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				CB83F7061DEE7B3A0038CF56 /* JBKenBurnsView.h */,
+				CB83F7071DEE7B3A0038CF56 /* JBKenBurnsView.m */,
 				CB83F6EF1DEE428B0038CF56 /* AppDelegate.swift */,
 				CB83F6F11DEE428B0038CF56 /* ViewController.swift */,
+				CB83F7011DEE684D0038CF56 /* TextImageViewController.swift */,
+				CB83F7031DEE72990038CF56 /* SnapshotViewController.swift */,
+				CB83F7091DEFB1600038CF56 /* KenBurnsEffectViewController.swift */,
 				CB83F6F31DEE428B0038CF56 /* Main.storyboard */,
 				CB83F6F61DEE428B0038CF56 /* Assets.xcassets */,
 				CB83F6F81DEE428B0038CF56 /* LaunchScreen.storyboard */,
 				CB83F6FB1DEE428B0038CF56 /* Info.plist */,
+				CB83F7051DEE7B3A0038CF56 /* CALayerPlayground-Bridging-Header.h */,
+				CB83F70B1DF10F2E0038CF56 /* SnapshotView.xib */,
+				CB83F70D1DF10FD80038CF56 /* SnapshotView.swift */,
 			);
 			path = CALayerPlayground;
 			sourceTree = "<group>";
@@ -97,6 +119,7 @@
 					CB83F6EB1DEE428B0038CF56 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = HHT67GY7SL;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB83F70C1DF10F2E0038CF56 /* SnapshotView.xib in Resources */,
 				CB83F6FA1DEE428B0038CF56 /* LaunchScreen.storyboard in Resources */,
 				CB83F6F71DEE428B0038CF56 /* Assets.xcassets in Resources */,
 				CB83F6F51DEE428B0038CF56 /* Main.storyboard in Resources */,
@@ -137,8 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB83F70E1DF10FD80038CF56 /* SnapshotView.swift in Sources */,
 				CB83F6F21DEE428B0038CF56 /* ViewController.swift in Sources */,
 				CB83F6F01DEE428B0038CF56 /* AppDelegate.swift in Sources */,
+				CB83F7041DEE72990038CF56 /* SnapshotViewController.swift in Sources */,
+				CB83F7021DEE684D0038CF56 /* TextImageViewController.swift in Sources */,
+				CB83F7081DEE7B3A0038CF56 /* JBKenBurnsView.m in Sources */,
+				CB83F70A1DEFB1600038CF56 /* KenBurnsEffectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +288,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = HHT67GY7SL;
 				INFOPLIST_FILE = CALayerPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.deekshaprabhakar.CALayerPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CALayerPlayground/CALayerPlayground-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,11 +304,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = HHT67GY7SL;
 				INFOPLIST_FILE = CALayerPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.deekshaprabhakar.CALayerPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CALayerPlayground/CALayerPlayground-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

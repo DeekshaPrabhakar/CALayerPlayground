@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SnapshotView" customModule="CALayerPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="entryImageView" destination="eCr-mj-sFy" id="LlQ-mM-ZxO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="asianArtMuseum" translatesAutoresizingMaskIntoConstraints="NO" id="eCr-mj-sFy">
+                    <rect key="frame" x="10" y="302" width="300" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LuV-dm-4Zh" userLabel="snapshotContentView">
+                    <rect key="frame" x="0.0" y="502" width="320" height="66"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deeksha" translatesAutoresizingMaskIntoConstraints="NO" id="4Fb-Rh-FSu">
+                            <rect key="frame" x="8" y="8" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="TNI-Ss-fJV"/>
+                                <constraint firstAttribute="width" constant="50" id="cgw-V0-YCR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29th Nov @ Asian Art Museum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hx-C5-M5K">
+                            <rect key="frame" x="66" y="31" width="198" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deeksha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ez7-KP-nmw">
+                            <rect key="frame" x="66" y="8" width="67" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98823529409999999" green="0.89411764709999997" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ez7-KP-nmw" secondAttribute="trailing" constant="8" id="3oQ-lK-c3h"/>
+                        <constraint firstItem="4Fb-Rh-FSu" firstAttribute="top" secondItem="LuV-dm-4Zh" secondAttribute="top" constant="8" id="J7U-c1-QO2"/>
+                        <constraint firstItem="Ez7-KP-nmw" firstAttribute="top" secondItem="4Fb-Rh-FSu" secondAttribute="top" id="Knl-NS-crW"/>
+                        <constraint firstAttribute="height" constant="66" id="QNE-It-RXr"/>
+                        <constraint firstAttribute="bottom" secondItem="4Fb-Rh-FSu" secondAttribute="bottom" constant="8" id="cNI-4O-2p1"/>
+                        <constraint firstItem="Ez7-KP-nmw" firstAttribute="leading" secondItem="4Fb-Rh-FSu" secondAttribute="trailing" constant="8" id="g5K-R5-PAB"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5Hx-C5-M5K" secondAttribute="trailing" constant="8" id="jyU-e2-PJF"/>
+                        <constraint firstItem="5Hx-C5-M5K" firstAttribute="top" secondItem="Ez7-KP-nmw" secondAttribute="bottom" constant="2" id="nLm-tz-fpd"/>
+                        <constraint firstItem="5Hx-C5-M5K" firstAttribute="leading" secondItem="Ez7-KP-nmw" secondAttribute="leading" id="qx7-hv-Myr"/>
+                        <constraint firstItem="4Fb-Rh-FSu" firstAttribute="leading" secondItem="LuV-dm-4Zh" secondAttribute="leading" constant="8" id="rY0-Hz-PCF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LuV-dm-4Zh" secondAttribute="bottom" id="2gr-df-y5l"/>
+                <constraint firstAttribute="trailing" secondItem="LuV-dm-4Zh" secondAttribute="trailing" id="3eR-5e-vUW"/>
+                <constraint firstItem="LuV-dm-4Zh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="e6N-7A-rbW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-64" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="asianArtMuseum" width="1600" height="1068"/>
+        <image name="deeksha" width="460" height="460"/>
+    </resources>
+</document>
